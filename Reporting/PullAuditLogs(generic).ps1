@@ -32,9 +32,5 @@ $signInLogEntries = $signInLogs.value
 
 $filteredfailedsignins = $signInLogEntries | where { $_.Status -like "*Invalid username or password or Invalid on-premise username or password.*" }
 
-
-
-
-//Az ==         management.azure.com
-//MSonline ==   
-//AzureAD ==    graph.windows.net
+# Print the results
+$filteredfailedsignins
